@@ -15,8 +15,8 @@ SECRET_KEY = '(i#*06f#keydy_fh17bf=$0f6v)^wr^l7*u4gq42m*sztu#2_m'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://stmanagesys.herokuapp.com/',
-    
+    '127.0.0.1',
+    'stmanagesys.herokuapp.com',
 ]
 
 
@@ -29,7 +29,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'student_management_app',
 ]
 
