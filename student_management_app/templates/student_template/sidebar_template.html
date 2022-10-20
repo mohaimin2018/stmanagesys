@@ -36,7 +36,16 @@
                 </p>
               </a>
             </li>
-
+            <li class="nav-item">
+              {% url 'payment' as payment %}
+              <a href="{{ payment }}" class="nav-link {% if request.path == payment %} active {% endif %}">
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <p>
+                  Payment
+                  {% comment %} <span class="right badge badge-danger">New</span> {% endcomment %}
+                </p>
+              </a>
+            </li>
             <li class="nav-item">
               {% url 'student_view_attendance' as student_view_attendance %}
               <a href="{{ student_view_attendance }}" class="nav-link {% if request.path == student_view_attendance %} active {% endif %}">
